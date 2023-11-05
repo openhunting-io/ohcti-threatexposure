@@ -78,9 +78,8 @@ chat your telegram bot, for example
 
 
 ## Openhunting.io
-
-Let's Opensource Threat Hunting Intelligence Information & Tools
-Openhunting.io is Project To Make Threat Hunting Information & Tools Available for Every One
+Let's Opensource Threat Hunting Intelligence Information & Tools.
+[Openhunting.io](https://openhunting.io/) is Project To Make Threat Hunting Information & Tools Available for Every One
 
 ![Long Live Opensource](https://github.com/openhunting-io/ohcti-threatexposure/blob/master/img/longliveopensource.png)
 

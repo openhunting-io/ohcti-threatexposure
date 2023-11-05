@@ -1,4 +1,4 @@
-![OpenAI Logo](https://www.openai.com/images/openai-logo.png)
+![OHCTI Threat Exposure](https://github.com/openhunting-io/ohcti-threatexposure/blob/master/img/logo.png)
 # OHCTI! Threat Exposure | Data Breach Monitoring (Telegram)
 As someone tasked with threat analysis, it is important for a threat hunter to understand how threat exposure occurs due to external factors such as user account breaches. There are many ways to analyze compromised accounts caused by malware stealers that infiltrate user devices. However, the average service provider offering user account exposure analysis tends to have a relatively high cost, making it challenging for threat analysts to provide their analysis.
 
@@ -82,7 +82,7 @@ chat your telegram bot, for example
 Let's Opensource Threat Hunting Intelligence Information & Tools
 Openhunting.io is Project To Make Threat Hunting Information & Tools Available for Every One
 
-![OpenAI Logo](https://www.openai.com/images/openai-logo.png)
+![Long Live Opensource](https://github.com/openhunting-io/ohcti-threatexposure/blob/master/img/longliveopensource.png)
 
 
 ## License

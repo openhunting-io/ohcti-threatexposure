@@ -1,0 +1,53 @@
+version: '3'
+services:
+  my-app-assisstant:
+    build: ./app-assisstant
+    container_name: app-assisstant
+    volumes:
+      - ./app-assisstant:/app
+    env_file:
+      - .env
+    command: python assisstant.py
+    networks:
+      - esnet
+    restart: always
+    depends_on:
+      - elasticsearch
+  my-app-watcher:
+    build: ./app-watcher
+    container_name: app-watcher
+    volumes:
+      - ./app-watcher:/app  # Mount app-watcher directory as read-only
+      - ./channel/telegram.txt:/channel/telegram.txt:ro
+      - ./breachfiles:/breachfiles  # Mount the databreach folder directly
+    env_file:
+      - .env
+    command: python watcher.py
+    networks:
+      - esnet
+            
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+    networks:
+      - esnet
+    volumes:
+      - ./elasticsearch:/usr/share/elasticsearch/data
+    restart: always
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.14.0
+    container_name: logstash
+    volumes:
+      - ./breachfiles:/logstash-logfiles
+      - ./logstash:/usr/share/logstash/pipeline
+    networks:
+      - esnet
+    depends_on:
+      - elasticsearch
+
+networks:
+  esnet:

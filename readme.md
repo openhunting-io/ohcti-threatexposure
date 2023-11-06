@@ -6,7 +6,7 @@ OHCTI! Threat Exposure is a tool built to facilitate this function, where threat
 
 ## Pre-Installation
 - Git
-- Docker
+- Docker (and Docker Compose)
 - Telegram BOT token (Create Bot using [Bot Father](https://t.me/BotFather))
 - Telegram Account (API_ID, API_HASH, USER_PHONE) [Telegram Account](https://my.telegram.org/auth)
 
@@ -48,7 +48,7 @@ Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
 ```
-docker build -t ohcti-threatexposure-my-app-watcher .\app-watcher\
+docker build -t ohcti-threatexposure-my-app-watcher ./app-watcher/
 ```
 Then, Create Telegram Session
 ```

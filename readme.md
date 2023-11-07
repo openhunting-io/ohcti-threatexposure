@@ -92,6 +92,21 @@ chat your telegram bot, for example
 /search example.co.id
 ```
 
+## Telegram Group Monitoring Link
+Here some telegram group for monitoring account stealer (i have insert in ./channel/telegram.txt):
+- https://t.me/urlloginpass666
+- https://t.me/txtbases
+- https://t.me/baseclouds
+- https://t.me/privatemail_pass
+- https://t.me/urlloginpassbase
+- https://t.me/URLPASSWORD
+- https://t.me/cloudtxt
+- https://t.me/nusacloud
+- https://t.me/chrono_cloud
+- https://t.me/SansaraCloud
+- https://t.me/txtbaseurl
+
+
 
 ## Openhunting.io
 Let's Opensource Threat Hunting Intelligence Information & Tools.

@@ -23,6 +23,7 @@ services:
     env_file:
       - .env
     command: python watcher.py
+    restart: always
     networks:
       - esnet
             

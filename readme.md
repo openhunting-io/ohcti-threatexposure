@@ -2,6 +2,8 @@
 # OHCTI! Threat Exposure | Data Breach Monitoring (Telegram)
 As someone tasked with threat analysis, it is important for a threat hunter to understand how threat exposure occurs due to external factors such as user account breaches. There are many ways to analyze compromised accounts caused by malware stealers that infiltrate user devices. However, the average service provider offering user account exposure analysis tends to have a relatively high cost, making it challenging for threat analysts to provide their analysis.
 
+![Scheme](https://github.com/openhunting-io/ohcti-threatexposure/blob/master/img/scheme.png)
+
 OHCTI! Threat Exposure is a tool built to facilitate this function, where threat analysts and intelligence professionals can examine exposure of user accounts within the organization under analysis, or perhaps for those conducting related research. OHCTI! Threat Exposure will detect user account breaches distributed through Telegram accounts. Every new file containing user information that emerges will be automatically integrated into the OHCTI! Threat Exposure system. You can easily search for account exposure using Telegram by contacting your BOT, and the BOT will automatically provide the results of your search command.
 
 ## Pre-Installation

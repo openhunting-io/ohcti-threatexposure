@@ -89,7 +89,6 @@ docker compose up -d
 First you have to mapping sub domain /map (if your assets have many sub domain breach)
 ```
 /map example.co.id
-
 ```
 
 and then you can detail result by using /search, chat your telegram bot, for example

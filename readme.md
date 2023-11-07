@@ -86,10 +86,16 @@ docker compose up -d
 
 ## How to Use
 
-chat your telegram bot, for example
+First you have to mapping sub domain /map (if your assets have many sub domain breach)
+```
+/map example.co.id
 
 ```
-/search example.co.id
+
+and then you can detail result by using /search, chat your telegram bot, for example
+
+```
+/search sub.example.co.id
 ```
 
 ## Telegram Group Monitoring Link

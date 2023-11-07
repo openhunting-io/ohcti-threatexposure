@@ -39,7 +39,7 @@ mv .env.example .env
 ```
 
 ## Edit .env File
-Insert your Telegram BOT Token And Telegram Account
+Insert your Telegram BOT Token ([Bot Father](https://t.me/BotFather)) And Telegram Account ([Telegram Account](https://my.telegram.org/auth))
 
 ```
 BOT_TOKEN=

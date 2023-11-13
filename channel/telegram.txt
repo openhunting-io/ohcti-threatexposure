@@ -1,11 +1,2 @@
 urlloginpass666
 txtbases
-baseclouds
-privatemail_pass
-urlloginpassbase
-URLPASSWORD
-cloudtxt
-nusacloud
-chrono_cloud
-SansaraCloud
-txtbaseurl

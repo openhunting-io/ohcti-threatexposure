@@ -13,20 +13,21 @@ services:
     restart: always
     depends_on:
       - elasticsearch
+
   my-app-watcher:
     build: ./app-watcher
     container_name: app-watcher
     volumes:
-      - ./app-watcher:/app  # Mount app-watcher directory as read-only
+      - ./app-watcher:/app
       - ./channel/telegram.txt:/channel/telegram.txt:ro
-      - ./breachfiles:/breachfiles  # Mount the databreach folder directly
+      - ./breachfiles:/breachfiles
     env_file:
       - .env
     command: python watcher.py
     restart: always
     networks:
       - esnet
-            
+
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
     container_name: elasticsearch
@@ -39,16 +40,25 @@ services:
     volumes:
       - ./elasticsearch:/usr/share/elasticsearch/data
     restart: always
+
   logstash:
     image: docker.elastic.co/logstash/logstash:7.14.0
     container_name: logstash
     volumes:
       - ./breachfiles:/logstash-logfiles
       - ./logstash:/usr/share/logstash/pipeline
+      - logstash-sincedb:/usr/share/logstash/data
     networks:
       - esnet
     depends_on:
       - elasticsearch
+    environment:
+      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_PORT=9200
+    restart: always
 
 networks:
   esnet:
+
+volumes:
+  logstash-sincedb:

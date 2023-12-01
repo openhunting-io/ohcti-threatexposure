@@ -34,6 +34,7 @@ Use This Command To Download Script
 
 ```bash
 git clone https://github.com/openhunting-io/ohcti-threatexposure
+sudo chmod 777 -R ohcti-threatexposure
 cd ohcti-threatexposure
 mv .env.example .env
 ```
